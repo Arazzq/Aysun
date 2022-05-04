@@ -28,15 +28,7 @@ async def start(event):
                     ),
                     link_preview=False
                    )
-@client.on(events.NewMessage(pattern="^/help$"))
-async def help(event):
-  helptext = "**Aysun bot'un Yardım Menyusu**\n\nƏmr: Hələ əmrlər hazır deyil təəssüf ki, \nSağol..."
-  await event.reply(helptext,
-                    buttons=(
-                      [Button.url('🌟 Məni qrupa sal', 'https://t.me/Ayssunbot?startgroup=a'),
-                       Button.url('📣 Support', 'https://t.me/supmerlin'),
-                      Button.url('👨‍💻 Sahibim', 'https://t.me/Arazdi')]
-                    ),
+
             
 print(">> Bot çalışıre ürəymm🚀 @ozuduqaqaw məlumat alabilərsən <<")
 client.run_until_disconnected()
